@@ -1,0 +1,65 @@
+=== Tokens ===
+Token(number, 0, L1:1)
+Token(identifier, "グ", L1:3)
+Token(number, 0, L1:5)
+Token(identifier, "ギ", L1:8)
+Token(identifier, "ゼゼソゼゼソ", L1:10)
+Token(identifier, "パパンパパン", L1:17)
+Token(number, 2, L1:24)
+Token(number, 0, L1:28)
+Token(number, 1, L1:36)
+Token(identifier, "ドググシギ", L1:41)
+Token(number, 1, L1:47)
+Token(eof, nil, L2:1)
+
+=== AST ===
+Program
+  ExprStmt
+    NumberLiteral: 0
+  ExprStmt
+    Identifier: グ
+  ExprStmt
+    NumberLiteral: 0
+  ExprStmt
+    Identifier: ギ
+  ExprStmt
+    Identifier: ゼゼソゼゼソ
+  ExprStmt
+    Identifier: パパンパパン
+  ExprStmt
+    NumberLiteral: 2
+  ExprStmt
+    NumberLiteral: 0
+  ExprStmt
+    NumberLiteral: 1
+  ExprStmt
+    Identifier: ドググシギ
+  ExprStmt
+    NumberLiteral: 1
+
+=== C ===
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+0;
+
+gu;
+
+0;
+
+gi;
+
+zezesozezeso;
+
+papanpapan;
+
+2;
+
+0;
+
+1;
+
+dogugusigi;
+
+1;

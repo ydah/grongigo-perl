@@ -1,0 +1,4 @@
+-e: -e:1: syntax error found (SyntaxError)
+> 1 | p(/(?{ 1 })/)
+    |      ^ undefined group option
+

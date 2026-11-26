@@ -1,0 +1,98 @@
+#!/usr/bin/env perl
+use v5.36;
+use utf8;
+use FindBin;
+use lib "$FindBin::Bin/../lib";
+use Getopt::Long qw(GetOptions Configure);
+use Encode qw(decode FB_CROAK);
+use File::Temp qw(tempdir);
+use File::Spec;
+use Math::BigInt;
+use Grongigo::Compiler;
+use Grongigo::Number qw(to_grongigo segmentations evaluate);
+use Grongigo::Jp2Grg qw(convert);
+
+binmode STDOUT, ':encoding(UTF-8)';
+binmode STDERR, ':encoding(UTF-8)';
+STDOUT->autoflush(1);
+Configure(qw(bundling no_auto_abbrev no_ignore_case));
+my (%options, $output, $run, $convert, $number, $word, $help, $version);
+my $valid = GetOptions(
+    'o|output=s'=>\$output, 'v|verbose'=>\$options{verbose},
+    't|tokens'=>\$options{output_tokens}, 'a|ast'=>\$options{output_ast},
+    'r|run'=>\$run, 'c|convert=s'=>\$convert, 'n|number=s'=>\$number,
+    'target=s'=>\$options{target}, 'segmentations=s'=>\$word,
+    'h|help'=>\$help, 'version'=>\$version,
+);
+sub usage {
+    print <<'HELP';
+Grongigo - Grongigo Programming Language Compiler (Perl)
+Usage: grongigo [options] <source_file.grg>
+  -o, --output FILE          Output file name
+  -v, --verbose              Verbose output
+  -t, --tokens               Output tokens
+  -a, --ast                  Output AST
+  -r, --run                  Compile and run (C requires gcc)
+  -c, --convert TEXT         Convert Japanese text to Grongigo
+  -n, --number NUM           Convert a decimal integer to Grongigo
+      --target c|perl        Output language (default: perl)
+      --segmentations WORD  Show every numeral segmentation
+  -h, --help                 Show this help
+      --version              Show version
+HELP
+}
+if (!$valid) { usage(); exit 1 }
+if ($help) { usage(); exit 0 }
+if ($version) { say 'Grongigo Perl version 0.1.0'; exit 0 }
+delete $options{target} unless defined $options{target};
+if (defined($options{target}) && $options{target} !~ /\A(?:c|perl)\z/) {
+    say "Error: Unknown target: $options{target}";
+    exit 1;
+}
+if (defined $number) {
+    if ($number !~ /\A[+-]?[0-9]+\z/) { say 'Error: Expected a decimal integer'; exit 1 }
+    $number = Math::BigInt->new($number)->bstr;
+    say "$number (decimal) = " . to_grongigo($number) . ' (Grongigo)';
+    exit 0;
+}
+if (defined($convert) || defined($word)) {
+    my $text = defined($convert) ? $convert : $word;
+    eval { $text = decode('UTF-8', $text, FB_CROAK) unless utf8::is_utf8($text) };
+    if ($@) { say 'Error: Invalid UTF-8 argument'; exit 1 }
+    if (defined $convert) { say convert($text) }
+    else {
+        for my $parts (segmentations($text)) {
+            my $value = evaluate($parts);
+            say join(' ', @$parts) . ' = ' . (defined($value) ? $value : '無効');
+        }
+    }
+    exit 0;
+}
+if (!@ARGV) { usage(); exit 0 }
+if (@ARGV != 1) { say 'Error: Expected one source file'; exit 1 }
+eval {
+    $_ = decode('UTF-8', $_, FB_CROAK) for grep { !utf8::is_utf8($_) } @ARGV;
+    $output = decode('UTF-8', $output, FB_CROAK) if defined($output) && !utf8::is_utf8($output);
+};
+if ($@) { say 'Error: Invalid UTF-8 path'; exit 1 }
+my $input = $ARGV[0];
+if (!-f $input) { say "Error: File not found: $input"; exit 1 }
+my $compiler = Grongigo::Compiler->new(%options);
+$output //= $compiler->output_path($input);
+if (!$compiler->compile_file($input, $output)) {
+    say 'Compilation failed:';
+    say "  $_" for @{$compiler->errors};
+    exit 1;
+}
+say "Successfully compiled: $input -> $output";
+exit 0 unless $run;
+my @command = ($^X, '--', $output);
+if (($options{target} // 'perl') eq 'c') {
+    my $tmp = tempdir(CLEANUP=>1);
+    my $exe = "$tmp/program";
+    if (system('gcc', '-o', $exe, File::Spec->rel2abs($output)) != 0) { say 'Error: gcc compilation failed'; exit 1 }
+    @command = ($exe);
+}
+print "\n=== Running program ===\n";
+my $status = system @command;
+exit($status == -1 ? 1 : $status & 127 ? 128 + ($status & 127) : $status >> 8);

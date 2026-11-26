@@ -1,0 +1,10 @@
+.reference/
+.runtime/
+*.bundle
+.DS_Store
+examples/*.c
+examples/*.pl
+examples/hello
+examples/calc
+examples/factorial
+examples/fizzbuzz

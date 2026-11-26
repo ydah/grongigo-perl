@@ -1,0 +1,14 @@
+OK   calc
+OK   edge-backslash
+OK   edge-comment
+OK   edge-glued
+OK   edge-ident-do
+OK   edge-literals
+OK   edge-numbers
+OK   edge-punct
+OK   edge-semicolon
+OK   edge-switch
+OK   edge-unterminated
+OK   factorial
+OK   fizzbuzz
+OK   hello

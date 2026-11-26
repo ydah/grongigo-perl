@@ -1,0 +1,39 @@
+=== Tokens ===
+Token(other_keyword, "パザ", L1:1)
+Token(type_keyword, "int", L1:4)
+Token(other_keyword, "main", L1:9)
+Token(type_keyword, "void", L1:12)
+Token(open_brace, "{", L2:1)
+Token(builtin_keyword, "printf", L3:3)
+Token(open_paren, "(", L3:8)
+Token(string_literal, "%d\\n", L3:14)
+Token(comma, ",", L3:31)
+Token(number, 10, L3:33)
+Token(close_paren, ")", L3:41)
+Token(control_keyword, "return", L4:3)
+Token(number, 0, L4:7)
+Token(close_brace, "}", L5:1)
+Token(eof, nil, L6:1)
+
+=== AST ===
+Program
+  FunctionDecl: int main
+    BlockStmt
+      ExprStmt
+        CallExpr
+          Identifier: printf
+          StringLiteral: "%d\\n"
+          NumberLiteral: 10
+      ReturnStmt
+        NumberLiteral: 0
+
+=== C ===
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+    printf("%d\n", 10);
+    return 0;
+}

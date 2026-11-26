@@ -1,0 +1,4 @@
+OK   calc
+OK   factorial
+OK   fizzbuzz
+OK   hello

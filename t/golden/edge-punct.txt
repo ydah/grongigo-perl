@@ -1,0 +1,18 @@
+=== Tokens ===
+Token(identifier, "ガ", L1:1)
+Token(comma, ",", L1:2)
+Token(identifier, "ダ", L1:3)
+Token(semicolon, ";", L1:4)
+Token(type_keyword, "int", L1:5)
+Token(colon, ":", L1:9)
+Token(number, 1, L1:10)
+Token(number, 2, L1:14)
+Token(number, 3, L1:18)
+Token(identifier, "ヘンスウ", L1:22)
+Token(operator, "++", L1:27)
+Token(operator, "!=", L1:32)
+Token(char_literal, "ガ", L1:39)
+Token(eof, nil, L2:1)
+
+=== Errors ===
+Parse error: Unexpected token: "," (type: comma) at line 1

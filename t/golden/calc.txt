@@ -1,0 +1,135 @@
+=== Tokens ===
+Token(other_keyword, "パザ", L1:1)
+Token(type_keyword, "int", L1:4)
+Token(other_keyword, "main", L1:9)
+Token(type_keyword, "void", L1:12)
+Token(open_brace, "{", L2:1)
+Token(type_keyword, "int", L3:5)
+Token(identifier, "ガ", L3:10)
+Token(operator, "=", L3:12)
+Token(number, 5, L3:16)
+Token(type_keyword, "int", L4:5)
+Token(identifier, "ダ", L4:10)
+Token(operator, "=", L4:12)
+Token(number, 3, L4:16)
+Token(type_keyword, "int", L5:5)
+Token(identifier, "ボダイ", L5:10)
+Token(identifier, "ボダイ", L7:5)
+Token(operator, "=", L7:9)
+Token(identifier, "ガ", L7:13)
+Token(operator, "+", L7:15)
+Token(identifier, "ダ", L7:18)
+Token(builtin_keyword, "printf", L8:5)
+Token(open_paren, "(", L8:10)
+Token(string_literal, "%d ダグ %d ジドギギ %d", L8:16)
+Token(comma, ",", L8:45)
+Token(identifier, "ガ", L8:47)
+Token(comma, ",", L8:48)
+Token(identifier, "ダ", L8:50)
+Token(comma, ",", L8:51)
+Token(identifier, "ボダイ", L8:53)
+Token(close_paren, ")", L8:57)
+Token(identifier, "ボダイ", L10:5)
+Token(operator, "=", L10:9)
+Token(identifier, "ガ", L10:13)
+Token(operator, "*", L10:15)
+Token(identifier, "ダ", L10:19)
+Token(builtin_keyword, "printf", L11:5)
+Token(open_paren, "(", L11:10)
+Token(string_literal, "%d バゲス %d ジドギギ %d", L11:16)
+Token(comma, ",", L11:46)
+Token(identifier, "ガ", L11:48)
+Token(comma, ",", L11:49)
+Token(identifier, "ダ", L11:51)
+Token(comma, ",", L11:52)
+Token(identifier, "ボダイ", L11:54)
+Token(close_paren, ")", L11:58)
+Token(identifier, "ボダイ", L13:5)
+Token(operator, "=", L13:9)
+Token(identifier, "ガ", L13:13)
+Token(operator, "%", L13:15)
+Token(identifier, "ダ", L13:19)
+Token(builtin_keyword, "printf", L14:5)
+Token(open_paren, "(", L14:10)
+Token(string_literal, "%d ガラシ %d ジドギギ %d", L14:16)
+Token(comma, ",", L14:46)
+Token(identifier, "ガ", L14:48)
+Token(comma, ",", L14:49)
+Token(identifier, "ダ", L14:51)
+Token(comma, ",", L14:52)
+Token(identifier, "ボダイ", L14:54)
+Token(close_paren, ")", L14:58)
+Token(control_keyword, "return", L16:5)
+Token(number, 0, L16:9)
+Token(close_brace, "}", L17:1)
+Token(eof, nil, L18:1)
+
+=== AST ===
+Program
+  FunctionDecl: int main
+    BlockStmt
+      VarDecl: int ガ
+        NumberLiteral: 5
+      VarDecl: int ダ
+        NumberLiteral: 3
+      VarDecl: int ボダイ
+      ExprStmt
+        AssignExpr
+          Identifier: ボダイ
+          BinaryExpr: +
+            Identifier: ガ
+            Identifier: ダ
+      ExprStmt
+        CallExpr
+          Identifier: printf
+          StringLiteral: "%d ダグ %d ジドギギ %d"
+          Identifier: ガ
+          Identifier: ダ
+          Identifier: ボダイ
+      ExprStmt
+        AssignExpr
+          Identifier: ボダイ
+          BinaryExpr: *
+            Identifier: ガ
+            Identifier: ダ
+      ExprStmt
+        CallExpr
+          Identifier: printf
+          StringLiteral: "%d バゲス %d ジドギギ %d"
+          Identifier: ガ
+          Identifier: ダ
+          Identifier: ボダイ
+      ExprStmt
+        AssignExpr
+          Identifier: ボダイ
+          BinaryExpr: %
+            Identifier: ガ
+            Identifier: ダ
+      ExprStmt
+        CallExpr
+          Identifier: printf
+          StringLiteral: "%d ガラシ %d ジドギギ %d"
+          Identifier: ガ
+          Identifier: ダ
+          Identifier: ボダイ
+      ReturnStmt
+        NumberLiteral: 0
+
+=== C ===
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+    int ga = 5;
+    int da = 3;
+    int bodai;
+    bodai = (ga + da);
+    printf("%d ダグ %d ジドギギ %d\n", ga, da, bodai);
+    bodai = (ga * da);
+    printf("%d バゲス %d ジドギギ %d\n", ga, da, bodai);
+    bodai = (ga % da);
+    printf("%d ガラシ %d ジドギギ %d\n", ga, da, bodai);
+    return 0;
+}

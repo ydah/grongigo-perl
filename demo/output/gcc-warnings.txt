@@ -1,0 +1,162 @@
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:16:19: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   16 |     if ((gidigida == 0))
+      |          ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:16:19: note: remove extraneous parentheses around the comparison to silence this warning
+   16 |     if ((gidigida == 0))
+      |         ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:16:19: note: use '=' to turn this equality comparison into an assignment
+   16 |     if ((gidigida == 0))
+      |                   ^~
+      |                   =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:20:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   20 |     else if ((gidigida == 1))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:20:24: note: remove extraneous parentheses around the comparison to silence this warning
+   20 |     else if ((gidigida == 1))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:20:24: note: use '=' to turn this equality comparison into an assignment
+   20 |     else if ((gidigida == 1))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:24:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   24 |     else if ((gidigida == 2))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:24:24: note: remove extraneous parentheses around the comparison to silence this warning
+   24 |     else if ((gidigida == 2))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:24:24: note: use '=' to turn this equality comparison into an assignment
+   24 |     else if ((gidigida == 2))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:28:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   28 |     else if ((gidigida == 3))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:28:24: note: remove extraneous parentheses around the comparison to silence this warning
+   28 |     else if ((gidigida == 3))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:28:24: note: use '=' to turn this equality comparison into an assignment
+   28 |     else if ((gidigida == 3))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:32:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   32 |     else if ((gidigida == 4))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:32:24: note: remove extraneous parentheses around the comparison to silence this warning
+   32 |     else if ((gidigida == 4))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:32:24: note: use '=' to turn this equality comparison into an assignment
+   32 |     else if ((gidigida == 4))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:36:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   36 |     else if ((gidigida == 5))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:36:24: note: remove extraneous parentheses around the comparison to silence this warning
+   36 |     else if ((gidigida == 5))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:36:24: note: use '=' to turn this equality comparison into an assignment
+   36 |     else if ((gidigida == 5))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:40:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   40 |     else if ((gidigida == 6))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:40:24: note: remove extraneous parentheses around the comparison to silence this warning
+   40 |     else if ((gidigida == 6))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:40:24: note: use '=' to turn this equality comparison into an assignment
+   40 |     else if ((gidigida == 6))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:44:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   44 |     else if ((gidigida == 7))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:44:24: note: remove extraneous parentheses around the comparison to silence this warning
+   44 |     else if ((gidigida == 7))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.ruby.c:44:24: note: use '=' to turn this equality comparison into an assignment
+   44 |     else if ((gidigida == 7))
+      |                        ^~
+      |                        =
+8 warnings generated.
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:16:19: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   16 |     if ((gidigida == 0))
+      |          ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:16:19: note: remove extraneous parentheses around the comparison to silence this warning
+   16 |     if ((gidigida == 0))
+      |         ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:16:19: note: use '=' to turn this equality comparison into an assignment
+   16 |     if ((gidigida == 0))
+      |                   ^~
+      |                   =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:20:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   20 |     else if ((gidigida == 1))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:20:24: note: remove extraneous parentheses around the comparison to silence this warning
+   20 |     else if ((gidigida == 1))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:20:24: note: use '=' to turn this equality comparison into an assignment
+   20 |     else if ((gidigida == 1))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:24:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   24 |     else if ((gidigida == 2))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:24:24: note: remove extraneous parentheses around the comparison to silence this warning
+   24 |     else if ((gidigida == 2))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:24:24: note: use '=' to turn this equality comparison into an assignment
+   24 |     else if ((gidigida == 2))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:28:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   28 |     else if ((gidigida == 3))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:28:24: note: remove extraneous parentheses around the comparison to silence this warning
+   28 |     else if ((gidigida == 3))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:28:24: note: use '=' to turn this equality comparison into an assignment
+   28 |     else if ((gidigida == 3))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:32:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   32 |     else if ((gidigida == 4))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:32:24: note: remove extraneous parentheses around the comparison to silence this warning
+   32 |     else if ((gidigida == 4))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:32:24: note: use '=' to turn this equality comparison into an assignment
+   32 |     else if ((gidigida == 4))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:36:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   36 |     else if ((gidigida == 5))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:36:24: note: remove extraneous parentheses around the comparison to silence this warning
+   36 |     else if ((gidigida == 5))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:36:24: note: use '=' to turn this equality comparison into an assignment
+   36 |     else if ((gidigida == 5))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:40:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   40 |     else if ((gidigida == 6))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:40:24: note: remove extraneous parentheses around the comparison to silence this warning
+   40 |     else if ((gidigida == 6))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:40:24: note: use '=' to turn this equality comparison into an assignment
+   40 |     else if ((gidigida == 6))
+      |                        ^~
+      |                        =
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:44:24: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+   44 |     else if ((gidigida == 7))
+      |               ~~~~~~~~~^~~~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:44:24: note: remove extraneous parentheses around the comparison to silence this warning
+   44 |     else if ((gidigida == 7))
+      |              ~         ^   ~
+/var/folders/kl/_mh5js3n3t77f895wpv3fwnh0000gp/T/tmp.OXIZViK8gI/fizzbuzz.perl.c:44:24: note: use '=' to turn this equality comparison into an assignment
+   44 |     else if ((gidigida == 7))
+      |                        ^~
+      |                        =
+8 warnings generated.

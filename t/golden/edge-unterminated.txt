@@ -1,0 +1,13 @@
+=== Tokens ===
+Token(other_keyword, "パザ", L1:1)
+Token(type_keyword, "int", L1:4)
+Token(other_keyword, "main", L1:9)
+Token(type_keyword, "void", L1:12)
+Token(open_brace, "{", L2:1)
+Token(builtin_keyword, "printf", L3:3)
+Token(open_paren, "(", L3:8)
+Token(string_literal, "abc\n", L3:14)
+Token(eof, nil, L4:1)
+
+=== Errors ===
+Parse error: Expected ) at line 4, column 1

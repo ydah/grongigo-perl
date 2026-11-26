@@ -1,0 +1,15 @@
+=== Tokens ===
+Token(builtin_keyword, "printf", L1:1)
+Token(open_paren, "(", L1:5)
+Token(operator, "=", L1:12)
+Token(open_paren, "(", L1:15)
+Token(identifier, "ギジサビバッボ", L1:22)
+Token(type_keyword, "int", L1:30)
+Token(open_brace, "{", L1:34)
+Token(open_brace, "{", L1:38)
+Token(identifier, "イ", L1:41)
+Token(identifier, "ギ", L1:43)
+Token(eof, nil, L2:1)
+
+=== Errors ===
+Parse error: Unexpected token: "=" (type: operator) at line 1

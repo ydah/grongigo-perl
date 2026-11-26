@@ -1,0 +1,11 @@
+=== Tokens ===
+Token(literal_keyword, "1", L1:1)
+Token(literal_keyword, "0", L1:4)
+Token(literal_keyword, "NULL", L1:7)
+Token(number, 1, L1:10)
+Token(other_keyword, "main", L1:15)
+Token(other_keyword, "パザ", L1:18)
+Token(eof, nil, L2:1)
+
+=== Errors ===
+Parse error: Expected return type at line 2, column 1

@@ -1,0 +1,476 @@
+=== Tokens ===
+Token(other_keyword, "パザ", L1:1)
+Token(type_keyword, "void", L1:4)
+Token(identifier, "ジンドゲンギュウ", L1:7)
+Token(type_keyword, "int", L1:16)
+Token(identifier, "バ", L1:21)
+Token(open_brace, "{", L2:1)
+Token(type_keyword, "int", L3:5)
+Token(identifier, "ジュウンベダ", L3:10)
+Token(type_keyword, "int", L4:5)
+Token(identifier, "ギヂギダ", L4:10)
+Token(identifier, "ジュウンベダ", L6:5)
+Token(operator, "=", L6:12)
+Token(identifier, "バ", L6:16)
+Token(operator, "/", L6:18)
+Token(number, 9, L6:21)
+Token(identifier, "ギヂギダ", L7:5)
+Token(operator, "=", L7:10)
+Token(identifier, "バ", L7:14)
+Token(operator, "%", L7:16)
+Token(number, 9, L7:20)
+Token(control_keyword, "if", L9:5)
+Token(identifier, "ジュウンベダ", L9:11)
+Token(operator, ">", L9:18)
+Token(number, 0, L9:23)
+Token(open_brace, "{", L10:5)
+Token(identifier, "ジンドゲンギュウ", L11:9)
+Token(open_paren, "(", L11:18)
+Token(identifier, "ジュウンベダ", L11:25)
+Token(close_paren, ")", L11:32)
+Token(builtin_keyword, "printf", L12:9)
+Token(open_paren, "(", L12:14)
+Token(string_literal, "グ", L12:20)
+Token(close_paren, ")", L12:34)
+Token(close_brace, "}", L13:5)
+Token(control_keyword, "if", L15:5)
+Token(identifier, "ギヂギダ", L15:11)
+Token(operator, "==", L15:16)
+Token(number, 0, L15:21)
+Token(open_brace, "{", L16:5)
+Token(builtin_keyword, "printf", L17:9)
+Token(open_paren, "(", L17:14)
+Token(string_literal, "ゼゼソ", L17:20)
+Token(close_paren, ")", L17:36)
+Token(close_brace, "}", L18:5)
+Token(control_keyword, "else", L19:5)
+Token(control_keyword, "if", L19:8)
+Token(identifier, "ギヂギダ", L19:14)
+Token(operator, "==", L19:19)
+Token(number, 1, L19:24)
+Token(open_brace, "{", L20:5)
+Token(builtin_keyword, "printf", L21:9)
+Token(open_paren, "(", L21:14)
+Token(string_literal, "パパン", L21:20)
+Token(close_paren, ")", L21:36)
+Token(close_brace, "}", L22:5)
+Token(control_keyword, "else", L23:5)
+Token(control_keyword, "if", L23:8)
+Token(identifier, "ギヂギダ", L23:14)
+Token(operator, "==", L23:19)
+Token(number, 2, L23:24)
+Token(open_brace, "{", L24:5)
+Token(builtin_keyword, "printf", L25:9)
+Token(open_paren, "(", L25:14)
+Token(string_literal, "ドググ", L25:20)
+Token(close_paren, ")", L25:36)
+Token(close_brace, "}", L26:5)
+Token(control_keyword, "else", L27:5)
+Token(control_keyword, "if", L27:8)
+Token(identifier, "ギヂギダ", L27:14)
+Token(operator, "==", L27:19)
+Token(number, 3, L27:24)
+Token(open_brace, "{", L28:5)
+Token(builtin_keyword, "printf", L29:9)
+Token(open_paren, "(", L29:14)
+Token(string_literal, "グシギ", L29:20)
+Token(close_paren, ")", L29:36)
+Token(close_brace, "}", L30:5)
+Token(control_keyword, "else", L31:5)
+Token(control_keyword, "if", L31:8)
+Token(identifier, "ギヂギダ", L31:14)
+Token(operator, "==", L31:19)
+Token(number, 4, L31:24)
+Token(open_brace, "{", L32:5)
+Token(builtin_keyword, "printf", L33:9)
+Token(open_paren, "(", L33:14)
+Token(string_literal, "ズゴゴ", L33:20)
+Token(close_paren, ")", L33:36)
+Token(close_brace, "}", L34:5)
+Token(control_keyword, "else", L35:5)
+Token(control_keyword, "if", L35:8)
+Token(identifier, "ギヂギダ", L35:14)
+Token(operator, "==", L35:19)
+Token(number, 5, L35:24)
+Token(open_brace, "{", L36:5)
+Token(builtin_keyword, "printf", L37:9)
+Token(open_paren, "(", L37:14)
+Token(string_literal, "ズガギ", L37:20)
+Token(close_paren, ")", L37:36)
+Token(close_brace, "}", L38:5)
+Token(control_keyword, "else", L39:5)
+Token(control_keyword, "if", L39:8)
+Token(identifier, "ギヂギダ", L39:14)
+Token(operator, "==", L39:19)
+Token(number, 6, L39:24)
+Token(open_brace, "{", L40:5)
+Token(builtin_keyword, "printf", L41:9)
+Token(open_paren, "(", L41:14)
+Token(string_literal, "ギブグ", L41:20)
+Token(close_paren, ")", L41:36)
+Token(close_brace, "}", L42:5)
+Token(control_keyword, "else", L43:5)
+Token(control_keyword, "if", L43:8)
+Token(identifier, "ギヂギダ", L43:14)
+Token(operator, "==", L43:19)
+Token(number, 7, L43:24)
+Token(open_brace, "{", L44:5)
+Token(builtin_keyword, "printf", L45:9)
+Token(open_paren, "(", L45:14)
+Token(string_literal, "ゲズン", L45:20)
+Token(close_paren, ")", L45:36)
+Token(close_brace, "}", L46:5)
+Token(control_keyword, "else", L47:5)
+Token(open_brace, "{", L48:5)
+Token(builtin_keyword, "printf", L49:9)
+Token(open_paren, "(", L49:14)
+Token(string_literal, "ゲギド", L49:20)
+Token(close_paren, ")", L49:36)
+Token(close_brace, "}", L50:5)
+Token(control_keyword, "if", L52:5)
+Token(identifier, "ジュウンベダ", L52:11)
+Token(operator, ">", L52:18)
+Token(number, 0, L52:23)
+Token(open_brace, "{", L53:5)
+Token(builtin_keyword, "printf", L54:9)
+Token(open_paren, "(", L54:14)
+Token(string_literal, "ド", L54:20)
+Token(close_paren, ")", L54:34)
+Token(close_brace, "}", L55:5)
+Token(close_brace, "}", L56:1)
+Token(other_keyword, "パザ", L58:1)
+Token(type_keyword, "int", L58:4)
+Token(other_keyword, "main", L58:9)
+Token(type_keyword, "void", L58:12)
+Token(open_brace, "{", L59:1)
+Token(type_keyword, "int", L60:5)
+Token(identifier, "ギ", L60:10)
+Token(operator, "=", L60:12)
+Token(number, 1, L60:16)
+Token(control_keyword, "while", L62:5)
+Token(identifier, "ギ", L62:9)
+Token(operator, "<=", L62:11)
+Token(number, 81, L62:14)
+Token(open_brace, "{", L63:5)
+Token(control_keyword, "if", L64:9)
+Token(identifier, "ギ", L64:15)
+Token(operator, "%", L64:17)
+Token(number, 15, L64:21)
+Token(operator, "==", L64:29)
+Token(number, 0, L64:34)
+Token(open_brace, "{", L65:9)
+Token(builtin_keyword, "printf", L66:13)
+Token(open_paren, "(", L66:18)
+Token(string_literal, "ズィズダズ", L66:24)
+Token(close_paren, ")", L66:42)
+Token(close_brace, "}", L67:9)
+Token(control_keyword, "else", L68:9)
+Token(control_keyword, "if", L68:12)
+Token(identifier, "ギ", L68:18)
+Token(operator, "%", L68:20)
+Token(number, 3, L68:24)
+Token(operator, "==", L68:28)
+Token(number, 0, L68:33)
+Token(open_brace, "{", L69:9)
+Token(builtin_keyword, "printf", L70:13)
+Token(open_paren, "(", L70:18)
+Token(string_literal, "ズィズ", L70:24)
+Token(close_paren, ")", L70:40)
+Token(close_brace, "}", L71:9)
+Token(control_keyword, "else", L72:9)
+Token(control_keyword, "if", L72:12)
+Token(identifier, "ギ", L72:18)
+Token(operator, "%", L72:20)
+Token(number, 5, L72:24)
+Token(operator, "==", L72:28)
+Token(number, 0, L72:33)
+Token(open_brace, "{", L73:9)
+Token(builtin_keyword, "printf", L74:13)
+Token(open_paren, "(", L74:18)
+Token(string_literal, "ダズ", L74:24)
+Token(close_paren, ")", L74:39)
+Token(close_brace, "}", L75:9)
+Token(control_keyword, "else", L76:9)
+Token(open_brace, "{", L77:9)
+Token(identifier, "ジンドゲンギュウ", L78:13)
+Token(open_paren, "(", L78:22)
+Token(identifier, "ギ", L78:29)
+Token(close_paren, ")", L78:31)
+Token(builtin_keyword, "printf", L79:13)
+Token(open_paren, "(", L79:18)
+Token(string_literal, "", L79:24)
+Token(close_paren, ")", L79:37)
+Token(close_brace, "}", L80:9)
+Token(identifier, "ギ", L82:9)
+Token(operator, "=", L82:11)
+Token(identifier, "ギ", L82:15)
+Token(operator, "+", L82:17)
+Token(number, 1, L82:20)
+Token(close_brace, "}", L83:5)
+Token(control_keyword, "return", L85:5)
+Token(number, 0, L85:9)
+Token(close_brace, "}", L86:1)
+Token(eof, nil, L87:1)
+
+=== AST ===
+Program
+  FunctionDecl: void ジンドゲンギュウ
+    Parameter: int バ
+    BlockStmt
+      VarDecl: int ジュウンベダ
+      VarDecl: int ギヂギダ
+      ExprStmt
+        AssignExpr
+          Identifier: ジュウンベダ
+          BinaryExpr: /
+            Identifier: バ
+            NumberLiteral: 9
+      ExprStmt
+        AssignExpr
+          Identifier: ギヂギダ
+          BinaryExpr: %
+            Identifier: バ
+            NumberLiteral: 9
+      IfStmt
+        BinaryExpr: >
+          Identifier: ジュウンベダ
+          NumberLiteral: 0
+        BlockStmt
+          ExprStmt
+            CallExpr
+              Identifier: ジンドゲンギュウ
+              Identifier: ジュウンベダ
+          ExprStmt
+            CallExpr
+              Identifier: printf
+              StringLiteral: "グ"
+      IfStmt
+        BinaryExpr: ==
+          Identifier: ギヂギダ
+          NumberLiteral: 0
+        BlockStmt
+          ExprStmt
+            CallExpr
+              Identifier: printf
+              StringLiteral: "ゼゼソ"
+        IfStmt
+          BinaryExpr: ==
+            Identifier: ギヂギダ
+            NumberLiteral: 1
+          BlockStmt
+            ExprStmt
+              CallExpr
+                Identifier: printf
+                StringLiteral: "パパン"
+          IfStmt
+            BinaryExpr: ==
+              Identifier: ギヂギダ
+              NumberLiteral: 2
+            BlockStmt
+              ExprStmt
+                CallExpr
+                  Identifier: printf
+                  StringLiteral: "ドググ"
+            IfStmt
+              BinaryExpr: ==
+                Identifier: ギヂギダ
+                NumberLiteral: 3
+              BlockStmt
+                ExprStmt
+                  CallExpr
+                    Identifier: printf
+                    StringLiteral: "グシギ"
+              IfStmt
+                BinaryExpr: ==
+                  Identifier: ギヂギダ
+                  NumberLiteral: 4
+                BlockStmt
+                  ExprStmt
+                    CallExpr
+                      Identifier: printf
+                      StringLiteral: "ズゴゴ"
+                IfStmt
+                  BinaryExpr: ==
+                    Identifier: ギヂギダ
+                    NumberLiteral: 5
+                  BlockStmt
+                    ExprStmt
+                      CallExpr
+                        Identifier: printf
+                        StringLiteral: "ズガギ"
+                  IfStmt
+                    BinaryExpr: ==
+                      Identifier: ギヂギダ
+                      NumberLiteral: 6
+                    BlockStmt
+                      ExprStmt
+                        CallExpr
+                          Identifier: printf
+                          StringLiteral: "ギブグ"
+                    IfStmt
+                      BinaryExpr: ==
+                        Identifier: ギヂギダ
+                        NumberLiteral: 7
+                      BlockStmt
+                        ExprStmt
+                          CallExpr
+                            Identifier: printf
+                            StringLiteral: "ゲズン"
+                      BlockStmt
+                        ExprStmt
+                          CallExpr
+                            Identifier: printf
+                            StringLiteral: "ゲギド"
+      IfStmt
+        BinaryExpr: >
+          Identifier: ジュウンベダ
+          NumberLiteral: 0
+        BlockStmt
+          ExprStmt
+            CallExpr
+              Identifier: printf
+              StringLiteral: "ド"
+  FunctionDecl: int main
+    BlockStmt
+      VarDecl: int ギ
+        NumberLiteral: 1
+      WhileStmt
+        BinaryExpr: <=
+          Identifier: ギ
+          NumberLiteral: 81
+        BlockStmt
+          IfStmt
+            BinaryExpr: ==
+              BinaryExpr: %
+                Identifier: ギ
+                NumberLiteral: 15
+              NumberLiteral: 0
+            BlockStmt
+              ExprStmt
+                CallExpr
+                  Identifier: printf
+                  StringLiteral: "ズィズダズ"
+            IfStmt
+              BinaryExpr: ==
+                BinaryExpr: %
+                  Identifier: ギ
+                  NumberLiteral: 3
+                NumberLiteral: 0
+              BlockStmt
+                ExprStmt
+                  CallExpr
+                    Identifier: printf
+                    StringLiteral: "ズィズ"
+              IfStmt
+                BinaryExpr: ==
+                  BinaryExpr: %
+                    Identifier: ギ
+                    NumberLiteral: 5
+                  NumberLiteral: 0
+                BlockStmt
+                  ExprStmt
+                    CallExpr
+                      Identifier: printf
+                      StringLiteral: "ダズ"
+                BlockStmt
+                  ExprStmt
+                    CallExpr
+                      Identifier: ジンドゲンギュウ
+                      Identifier: ギ
+                  ExprStmt
+                    CallExpr
+                      Identifier: printf
+                      StringLiteral: ""
+          ExprStmt
+            AssignExpr
+              Identifier: ギ
+              BinaryExpr: +
+                Identifier: ギ
+                NumberLiteral: 1
+      ReturnStmt
+        NumberLiteral: 0
+
+=== C ===
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void zindogengi_u(int ba)
+{
+    int juunbeda;
+    int gidigida;
+    juunbeda = (ba / 9);
+    gidigida = (ba % 9);
+    if ((juunbeda > 0))
+    {
+        zindogengi_u(juunbeda);
+        printf("グ\n");
+    }
+    if ((gidigida == 0))
+    {
+        printf("ゼゼソ\n");
+    }
+    else if ((gidigida == 1))
+    {
+        printf("パパン\n");
+    }
+    else if ((gidigida == 2))
+    {
+        printf("ドググ\n");
+    }
+    else if ((gidigida == 3))
+    {
+        printf("グシギ\n");
+    }
+    else if ((gidigida == 4))
+    {
+        printf("ズゴゴ\n");
+    }
+    else if ((gidigida == 5))
+    {
+        printf("ズガギ\n");
+    }
+    else if ((gidigida == 6))
+    {
+        printf("ギブグ\n");
+    }
+    else if ((gidigida == 7))
+    {
+        printf("ゲズン\n");
+    }
+    else
+    {
+        printf("ゲギド\n");
+    }
+    if ((juunbeda > 0))
+    {
+        printf("ド\n");
+    }
+}
+
+int main(void)
+{
+    int gi = 1;
+    while ((gi <= 81))
+    {
+        if (((gi % 15) == 0))
+        {
+            printf("ズィズダズ\n");
+        }
+        else if (((gi % 3) == 0))
+        {
+            printf("ズィズ\n");
+        }
+        else if (((gi % 5) == 0))
+        {
+            printf("ダズ\n");
+        }
+        else
+        {
+            zindogengi_u(gi);
+            printf("\n");
+        }
+        gi = (gi + 1);
+    }
+    return 0;
+}

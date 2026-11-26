@@ -1,0 +1,18 @@
+=== Tokens ===
+Token(other_keyword, "パザ", L1:1)
+Token(type_keyword, "int", L1:4)
+Token(other_keyword, "main", L1:9)
+Token(type_keyword, "void", L1:12)
+Token(open_brace, "{", L2:1)
+Token(type_keyword, "int", L3:3)
+Token(identifier, "ガ", L3:8)
+Token(operator, "=", L3:10)
+Token(number, 1, L3:14)
+Token(semicolon, ";", L3:17)
+Token(control_keyword, "return", L4:3)
+Token(identifier, "ガ", L4:7)
+Token(close_brace, "}", L5:1)
+Token(eof, nil, L6:1)
+
+=== Errors ===
+Parse error: Unexpected token: ";" (type: semicolon) at line 3

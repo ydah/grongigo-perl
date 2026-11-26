@@ -1,0 +1,131 @@
+=== Tokens ===
+Token(other_keyword, "パザ", L1:1)
+Token(type_keyword, "int", L1:4)
+Token(identifier, "バギジョウシギャス", L1:9)
+Token(type_keyword, "int", L1:19)
+Token(identifier, "バ", L1:24)
+Token(open_brace, "{", L2:1)
+Token(control_keyword, "if", L3:5)
+Token(identifier, "バ", L3:11)
+Token(operator, "<=", L3:13)
+Token(number, 1, L3:16)
+Token(open_brace, "{", L4:5)
+Token(control_keyword, "return", L5:9)
+Token(number, 1, L5:13)
+Token(close_brace, "}", L6:5)
+Token(control_keyword, "return", L7:5)
+Token(identifier, "バ", L7:9)
+Token(operator, "*", L7:11)
+Token(identifier, "バギジョウシギャス", L7:15)
+Token(open_paren, "(", L7:25)
+Token(identifier, "バ", L7:32)
+Token(operator, "-", L7:34)
+Token(number, 1, L7:37)
+Token(close_paren, ")", L7:41)
+Token(close_brace, "}", L8:1)
+Token(other_keyword, "パザ", L10:1)
+Token(type_keyword, "int", L10:4)
+Token(other_keyword, "main", L10:9)
+Token(type_keyword, "void", L10:12)
+Token(open_brace, "{", L11:1)
+Token(type_keyword, "int", L12:5)
+Token(identifier, "ギ", L12:10)
+Token(operator, "=", L12:12)
+Token(number, 0, L12:16)
+Token(control_keyword, "while", L14:5)
+Token(identifier, "ギ", L14:9)
+Token(operator, "<=", L14:11)
+Token(number, 9, L14:14)
+Token(open_brace, "{", L15:5)
+Token(builtin_keyword, "printf", L16:9)
+Token(open_paren, "(", L16:14)
+Token(string_literal, "%d! = %d", L16:20)
+Token(comma, ",", L16:41)
+Token(identifier, "ギ", L16:43)
+Token(comma, ",", L16:44)
+Token(identifier, "バギジョウシギャス", L16:46)
+Token(open_paren, "(", L16:56)
+Token(identifier, "ギ", L16:63)
+Token(close_paren, ")", L16:65)
+Token(close_paren, ")", L16:71)
+Token(identifier, "ギ", L17:9)
+Token(operator, "=", L17:11)
+Token(identifier, "ギ", L17:15)
+Token(operator, "+", L17:17)
+Token(number, 1, L17:20)
+Token(close_brace, "}", L18:5)
+Token(control_keyword, "return", L20:5)
+Token(number, 0, L20:9)
+Token(close_brace, "}", L21:1)
+Token(eof, nil, L22:1)
+
+=== AST ===
+Program
+  FunctionDecl: int バギジョウシギャス
+    Parameter: int バ
+    BlockStmt
+      IfStmt
+        BinaryExpr: <=
+          Identifier: バ
+          NumberLiteral: 1
+        BlockStmt
+          ReturnStmt
+            NumberLiteral: 1
+      ReturnStmt
+        BinaryExpr: *
+          Identifier: バ
+          CallExpr
+            Identifier: バギジョウシギャス
+            BinaryExpr: -
+              Identifier: バ
+              NumberLiteral: 1
+  FunctionDecl: int main
+    BlockStmt
+      VarDecl: int ギ
+        NumberLiteral: 0
+      WhileStmt
+        BinaryExpr: <=
+          Identifier: ギ
+          NumberLiteral: 9
+        BlockStmt
+          ExprStmt
+            CallExpr
+              Identifier: printf
+              StringLiteral: "%d! = %d"
+              Identifier: ギ
+              CallExpr
+                Identifier: バギジョウシギャス
+                Identifier: ギ
+          ExprStmt
+            AssignExpr
+              Identifier: ギ
+              BinaryExpr: +
+                Identifier: ギ
+                NumberLiteral: 1
+      ReturnStmt
+        NumberLiteral: 0
+
+=== C ===
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int bagijousigi_su(int ba)
+{
+    if ((ba <= 1))
+    {
+        return 1;
+    }
+    return (ba * bagijousigi_su((ba - 1)));
+}
+
+int main(void)
+{
+    int gi = 0;
+    while ((gi <= 9))
+    {
+        printf("%d! = %d\n", gi, bagijousigi_su(gi));
+        gi = (gi + 1);
+    }
+    return 0;
+}

@@ -1,0 +1,6 @@
+=== Tokens ===
+Token(type_keyword, "int", L1:1)
+Token(eof, nil, L2:1)
+
+=== Errors ===
+Parse error: Expected identifier at line 2

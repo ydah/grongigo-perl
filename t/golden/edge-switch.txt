@@ -1,0 +1,46 @@
+=== Tokens ===
+Token(other_keyword, "パザ", L1:1)
+Token(type_keyword, "int", L1:4)
+Token(other_keyword, "main", L1:9)
+Token(type_keyword, "void", L1:12)
+Token(open_brace, "{", L2:1)
+Token(control_keyword, "switch", L3:3)
+Token(number, 1, L3:8)
+Token(open_brace, "{", L3:12)
+Token(control_keyword, "case", L4:5)
+Token(number, 1, L4:9)
+Token(colon, ":", L4:12)
+Token(control_keyword, "break", L4:14)
+Token(control_keyword, "default", L5:5)
+Token(colon, ":", L5:8)
+Token(control_keyword, "break", L5:10)
+Token(close_brace, "}", L6:3)
+Token(control_keyword, "return", L7:3)
+Token(number, 0, L7:7)
+Token(close_brace, "}", L8:1)
+Token(eof, nil, L9:1)
+
+=== AST ===
+Program
+  FunctionDecl: int main
+    BlockStmt
+      Unknown: Grongigo::AST::SwitchStmt
+      ReturnStmt
+        NumberLiteral: 0
+
+=== C ===
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+    switch (1)
+    {
+    case 1:
+        break;
+    default:
+        break;
+    }
+    return 0;
+}
